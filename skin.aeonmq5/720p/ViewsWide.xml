@@ -85,7 +85,9 @@
 	<posy>65</posy>
 	<width>640</width>
 	<height>585</height>
-	<texture>darkgrey.png</texture>
+	<!-- texture>darkgrey.png</texture -->
+	<texture>glass1.png</texture>
+	<aspectratio>stretch</aspectratio>
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	<animation effect="fade" end="95" condition="true">Conditional</animation>
 	</control>
@@ -172,7 +174,8 @@
 	<posy>0</posy>
 	<width>640</width>
 	<height>40</height>
-	<texture>settings_button_focus.png</texture>
+	<texture border="5">folder-focus-red.png</texture>
+	<colordiffuse>95FFFFFF</colordiffuse>
 	<animation effect="fade" start="100" end="30" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
 	</control>
 	<control type="label">
@@ -303,7 +306,9 @@
 	<posy>-70</posy>
 	<width>640</width>
 	<height>720</height>
-	<texture>darkgrey.png</texture>
+	<!-- texture>darkgrey.png</texture -->
+	<texture>glass1.png</texture>
+	<aspectratio>stretch</aspectratio>
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	<animation effect="fade" end="85" condition="true">Conditional</animation>
 	</control>
@@ -312,7 +317,9 @@
 	<posy>396</posy>
 	<width>640</width>
 	<height>254</height>
-	<texture>darkgrey.png</texture>
+	<!-- texture>darkgrey.png</texture -->
+	<texture>glass1.png</texture>
+	<aspectratio>stretch</aspectratio>
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	<animation effect="fade" end="85" condition="true">Conditional</animation>
 	<include>Animation_Fade</include>

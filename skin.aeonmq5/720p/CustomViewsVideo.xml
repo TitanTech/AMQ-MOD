@@ -180,9 +180,9 @@
 	<selected>Skin.HasSetting(viewlandscapex_video)</selected>
 	<visible>Container.Content(tvshows) | Container.Content(episodes)</visible>
 	</control>
-	<control type="radiobutton" id="19265"><!-- Thumbnail --><!-- 500 -->
+	<control type="radiobutton" id="19265"><!-- Thumbnail top menu--><!-- 500 -->
 		<radioposx>894</radioposx>
-		<label>Thumbnail</label>
+		<label>21371</label>
 		<onclick>Skin.ToggleSetting(viewthumbnail_video)</onclick>
 		<selected>Skin.HasSetting(viewthumbnail_video)</selected>
 		<!-- visible>Container.Content(files) | Container.Content(episodes)</visible -->
