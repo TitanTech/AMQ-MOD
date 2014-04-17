@@ -106,6 +106,7 @@
 	<width>1280</width>
 	<height>400</height>
 	<texture flipy="true">osd_black_bg.png</texture>
+	<visible>Control.HasFocus(9940) | Control.HasFocus(9941) | Control.HasFocus(9942)</visible>
 	</control>
 	<control type="button" id="9943">
 	<left>30</left>
@@ -123,6 +124,7 @@
 	<onclick condition="Window.IsActive(1)">ActivateWindow(631)</onclick>
 	<ondown>SetFocus(51)</ondown>
 	<visible>![Skin.HasSetting(rcbgames) | Window.IsActive(2)]</visible>
+	<visible>Control.HasFocus(9940) | Control.HasFocus(9941) | Control.HasFocus(9942)</visible>
 	</control>
 	<control type="label">
 	<left>30</left>
