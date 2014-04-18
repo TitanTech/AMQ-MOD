@@ -15,7 +15,8 @@
 	<selectedcolor>$VAR[value_headercolor]</selectedcolor>
 	</include>
 	<include name="subcolorfocus">
-	<textcolor>FF151515</textcolor>
+	<!-- textcolor>FF151515</textcolor -->
+	<textcolor>$VAR[value_headercolorfocus]</textcolor>
 	<selectedcolor>$VAR[value_headercolorfocus]</selectedcolor>
 	</include>
 	<include name="detailcolor">
