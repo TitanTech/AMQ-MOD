@@ -174,7 +174,7 @@
 	<posy>0</posy>
 	<width>640</width>
 	<height>40</height>
-	<texture border="5">folder-focus-red.png</texture>
+	<texture border="5">list-focus-red.png</texture>
 	<colordiffuse>95FFFFFF</colordiffuse>
 	<animation effect="fade" start="100" end="30" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
 	</control>
@@ -225,7 +225,9 @@
 	<posy>0</posy>
 	<width>640</width>
 	<height>63</height>
-	<texture>settings_button_focus.png</texture>
+	<!-- texture>settings_button_focus.png</texture -->
+	<texture border="5">list-focus-red.png</texture>
+	<colordiffuse>95FFFFFF</colordiffuse>
 	<animation effect="fade" start="100" end="30" time="0" condition="!Control.Hasfocus(51)">conditional</animation>
 	</control>
 	<control type="label">
