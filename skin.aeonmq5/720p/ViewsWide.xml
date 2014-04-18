@@ -185,7 +185,8 @@
 	<height>40</height>
 	<font>Font_24A</font>
 	<aligny>center</aligny>
-	<include>listcolorfocus</include>
+	<!-- include>listcolorfocus</include -->
+	<include>listcolor</include>
 	<label>$INFO[ListItem.Label]</label>
 	</control>
 	<control type="label">
@@ -237,7 +238,8 @@
 	<height>41</height>
 	<font>Font_24A</font>
 	<aligny>center</aligny>
-	<include>listcolorfocus</include>
+	<!-- include>listcolorfocus</include -->
+	<include>listcolor</include>
 	<label>$INFO[ListItem.Label]</label>
 	</control>
 	<control type="label">
