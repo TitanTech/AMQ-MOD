@@ -3765,4 +3765,23 @@
 	</item>
 	</content>
 	</include>	
+	
+	<include name="TitanSettings">
+		
+		<!-- Here are some examples of how to set different types of settings -->
+		<!-- So this is where you put the ones that are different from the normal defaults-->
+		
+		<!-- true/false statements -->
+        <onload condition="Skin.HasSetting(originaltitle)">Skin.Reset(originaltitle)</onload><!-- if true set false -->
+        <onload condition="!Skin.HasSetting(darkbar)">Skin.SetBool(darkbar)</onload><!-- if not true set true -->
+		<!-- strings, images and paths -->
+		<onload condition="!StringCompare(Skin.String(colorheader),red)">Skin.SetString(colorheader,red)</onload><!-- if colorheader is not red set to red -->
+		<!-- the use of special://skin/ to point to an image independant of OS -->
+		<!-- instead of using C:\Users\Hackermil\AppData\Roaming\XBMC\addons\skin.aeonmq5\backgrounds\movies.jpg -->
+		<onload condition="!StringCompare(Skin.String(menu1.bg),special://skin/backgrounds/movies.jpg)">Skin.SetString(menu1.bg,special://skin/backgrounds/movies.jpg)</onload><!-- if colorheader is not red set to red -->
+		
+		<!-- this lets the skin know the settings have been set, don't change or remove -->
+        <onload condition="!Skin.HasSetting(FirstRunTitanSettings)">Skin.SetBool(FirstRunTitanSettings)</onload>
+	</include>
+	
 	</includes>

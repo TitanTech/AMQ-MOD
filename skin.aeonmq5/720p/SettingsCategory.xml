@@ -4,7 +4,9 @@
 	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload condition="!StringCompare(skin.string(defaultsettings),2)">AlarmClock(firstfocus,SetFocus(900),0:01,true)</onload>
+	<include condition="!Skin.HasSetting(FirstRunTitanSettings)">TitanSettings</include>
 	<controls>
+	
 	<control type="multiimage">
 	<include>WindowBG</include>
 	<imagepath background="true">$VAR[value_menutheme_settings]</imagepath>

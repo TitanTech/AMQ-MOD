@@ -7,6 +7,7 @@
 	<onload condition="Skin.HasSetting(custommode)">Skin.Reset(custommode)</onload>
 	<onload condition="Skin.HasSetting(submode)">Skin.Reset(submode)</onload>
 	<onload condition="Skin.HasSetting(startplay)">PlayMedia($INFO[Skin.String(startupplaylist)])</onload>
+	<include condition="!Skin.HasSetting(FirstRunTitanSettings)">TitanSettings</include>
 	<allowoverlay>no</allowoverlay>
 	<controls>
 	<control type="button" id="10">
