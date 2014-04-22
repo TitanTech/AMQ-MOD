@@ -76,10 +76,10 @@
 	<posy>0</posy>
 	<width>605</width>
 	<height>39</height>
-	<colordiffuse>75660000</colordiffuse>
+	<colordiffuse>75FFFFFF</colordiffuse>
 	<aspectratio>stretch</aspectratio>
 	
-	<texture border="3">Mborder.png</texture>
+	<texture border="3">white.png</texture>
 	</control>
 	<control type="label">
 	<posx>5</posx>
@@ -218,9 +218,9 @@
 	<font>Font_18</font>
 	<align>center</align>
 	<aligny>center</aligny>
-	<texturefocus border="3">Mborder.png</texturefocus>
-	<texturenofocus border="3">Mborder.png</texturenofocus>
-	<colordiffuse>75660000</colordiffuse>
+	<texturefocus border="3">white.png</texturefocus>
+	<texturenofocus border="3">white.png</texturenofocus>
+	<colordiffuse>75FFFFFF</colordiffuse>
 	<textcolor>80FFFAF0</textcolor>
 	<focusedcolor>FFFFFAF0</focusedcolor>
 	<selectedcolor>FFFFFAF0</selectedcolor>
