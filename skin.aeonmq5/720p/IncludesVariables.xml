@@ -1754,7 +1754,8 @@
 	</variable>
 	<variable name="value_menucolorlabelfocus">
 	<value condition="Skin.HasSetting(whitemenu)">E4101010</value>
-	<value condition="!Skin.HasSetting(whitemenu)">FFFFFAF0</value>
+	<!-- value condition="!Skin.HasSetting(whitemenu)">FFFFFAF0</value -->
+	<value condition="!Skin.HasSetting(whitemenu)">red1</value>
 	</variable>
 
 	<variable name="value_seasonlabel">
