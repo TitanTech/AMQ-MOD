@@ -71,9 +71,19 @@
 	</control>
 	</itemlayout>
 	<focusedlayout height="41">
+	<control type="image">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>605</width>
+	<height>39</height>
+	<colordiffuse>75660000</colordiffuse>
+	<aspectratio>stretch</aspectratio>
+	
+	<texture border="3">Mborder.png</texture>
+	</control>
 	<control type="label">
 	<posx>5</posx>
-	<posy>0</posy>
+	<posy>2</posy>
 	<width>605</width>
 	<height>32</height>
 	<font>Font_18A</font>
@@ -100,7 +110,7 @@
 	<texture>black.png</texture>
 	<colordiffuse>90FFFFFF</colordiffuse>
 	</control>
-	<control type="label" id="0"><!-- header -->
+	<control type="label" id="2"><!-- header -->
 	<posx>10</posx>
 	<posy>6</posy>
 	<width>673</width>
@@ -201,15 +211,16 @@
 	</control>
 
 	<control type="button" id="12"><!-- name -->
-	<posx>18</posx>
-	<posy>265</posy>
+	<posx>14</posx>
+	<posy>271</posy>
 	<width>653</width>
 	<height>44</height>
 	<font>Font_18</font>
 	<align>center</align>
 	<aligny>center</aligny>
-	<texturefocus>-</texturefocus>
-	<texturenofocus>-</texturenofocus>
+	<texturefocus border="3">Mborder.png</texturefocus>
+	<texturenofocus border="3">Mborder.png</texturenofocus>
+	<colordiffuse>75660000</colordiffuse>
 	<textcolor>80FFFAF0</textcolor>
 	<focusedcolor>FFFFFAF0</focusedcolor>
 	<selectedcolor>FFFFFAF0</selectedcolor>
@@ -219,6 +230,7 @@
 	<onright>18</onright>
 	<ondown>10</ondown>
 	</control>
+	
 	</control>
 	</controls>
 	</window>
