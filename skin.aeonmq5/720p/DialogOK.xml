@@ -19,7 +19,19 @@
 	<include>Dialogs_Label4</include>
 	</control>
 	<control type="button" id="10">
-	<include>InvisibleButton</include>
+	<posx>565</posx>
+	<posy>30</posy>
+	<height>29</height>
+	<width>150</width>
+	<align>center</align>
+	<textcolor>FFFFFAF0</textcolor>
+	<focusedcolor>FF101010</focusedcolor>
+	<font>Font_18A</font>
+	<label>$LOCALIZE[186]</label>
+	<textoffsetx>0</textoffsetx>
+	<textwidth>180</textwidth>
+	<texturefocus>settings_button_focus.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
 	<onleft>10</onleft>
 	<onright>10</onright>
 	<onup>10</onup>
