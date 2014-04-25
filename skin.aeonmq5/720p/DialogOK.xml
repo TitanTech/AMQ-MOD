@@ -1,42 +1,108 @@
-	<!-- Aeon MQ 5 -->
+<!-- Aeon MQ 5 -->
 
-	<window id="2002">
-	<defaultcontrol>10</defaultcontrol>
-	<controls>
+<window id="2002">
+<defaultcontrol>10</defaultcontrol>
+<controls>
+
 	<control type="group">
-	<include>Animation_TopDialogPopup</include>
-	<include>Dialogs_DoubleBar</include>
-	<control type="label" id="1">
-	<include>Dialogs_Label1</include>
+		<animation type="WindowOpen" reversible="false">
+            <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
+            <effect type="zoom" start="50" end="100" time="300" center="auto" tween="back" easing="out" />
+        </animation>
+        <animation type="Visible" reversible="false">
+            <effect type="fade" start="0" end="100" time="200" delay="300" tween="sine" easing="in" />
+            <effect type="zoom" start="115" end="100" time="200" delay="300" center="auto" tween="sine" easing="out" />
+        </animation>
+        <animation type="Hidden" reversible="false">
+            <effect type="zoom" start="100" end="115" center="auto" tween="sine" delay="0" easing="out" time="200" /> 
+            <effect type="fade" start="100" end="0" tween="cubic" easing="out" delay="0" time="200" />
+        </animation>
+        <animation type="WindowClose" reversible="false">
+            <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
+            <effect type="zoom" start="100" end="85" time="200" center="auto" tween="sine" easing="out" />
+        </animation>
+
+		<control type="image">
+			<posx>335</posx>
+			<posy>125</posy>
+			<width>610</width>
+			<height>245</height>
+			<texture>black.png</texture>
+			<colordiffuse>C3FFFFFF</colordiffuse>
+		</control>
+		<control type="image">
+			<description>line</description>
+			<posx>335</posx>
+			<posy>175</posy>
+			<width>610</width>
+			<height>2</height>
+			<texture>white.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<colordiffuse>24FFFFFF</colordiffuse>
+		</control> 
+		
+		<control type="label" id="1">
+			<posx>360</posx>
+			<posy>137</posy>
+			<width>580</width>
+			<height>35</height>
+			<align>left</align>
+			<textcolor>$VAR[value_headercolor]</textcolor>
+			<font>Font_17</font>
+			<scroll>true</scroll>
+		</control>
+
+		<control type="label" id="2">
+			<posx>360</posx>
+			<posy>195</posy>
+			<width>580</width>
+			<height>35</height>
+			<align>center</align>
+			<textcolor>FFFFFAF0</textcolor>
+			<font>Font_17</font>
+			<scroll>true</scroll>
+		</control>
+		<control type="label" id="3">
+			<posx>360</posx>
+			<posy>240</posy>
+			<width>580</width>
+			<height>35</height>
+			<align>center</align>
+			<textcolor>FFFFFAF0</textcolor>
+			<font>Font_17</font>
+			<scroll>true</scroll>
+		</control>
+		<control type="label" id="4">
+			<posx>360</posx>
+			<posy>285</posy>
+			<width>580</width>
+			<height>35</height>
+			<align>center</align>
+			<textcolor>FFFFFAF0</textcolor>
+			<font>Font_17</font>
+			<scroll>true</scroll>
+		</control>
+		<control type="button" id="10">
+			<posx>565</posx>
+			<posy>340</posy>
+			<height>29</height>
+			<width>150</width>
+			<align>center</align>
+			<textcolor>FFFFFAF0</textcolor>
+			<focusedcolor>FF101010</focusedcolor>
+			<font>Font_18A</font>
+			<label>$LOCALIZE[186]</label>
+			<textoffsetx>0</textoffsetx>
+			<textwidth>180</textwidth>
+			<texturefocus>settings_button_focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>10</onup>
+			<ondown>10</ondown>
+		</control>
 	</control>
-	<control type="label" id="2">
-	<include>Dialogs_Label2</include>
-	</control>
-	<control type="label" id="3">
-	<include>Dialogs_Label3</include>
-	</control>
-	<control type="label" id="4">
-	<include>Dialogs_Label4</include>
-	</control>
-	<control type="button" id="10">
-	<posx>565</posx>
-	<posy>30</posy>
-	<height>29</height>
-	<width>150</width>
-	<align>center</align>
-	<textcolor>FFFFFAF0</textcolor>
-	<focusedcolor>FF101010</focusedcolor>
-	<font>Font_18A</font>
-	<label>$LOCALIZE[186]</label>
-	<textoffsetx>0</textoffsetx>
-	<textwidth>180</textwidth>
-	<texturefocus>settings_button_focus.png</texturefocus>
-	<texturenofocus>-</texturenofocus>
-	<onleft>10</onleft>
-	<onright>10</onright>
-	<onup>10</onup>
-	<ondown>10</ondown>
-	</control>
-	</control>
-	</controls>
-	</window>
+	
+</controls>
+</window>
+	
