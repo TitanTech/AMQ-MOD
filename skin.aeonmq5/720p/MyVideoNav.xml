@@ -3,6 +3,7 @@
 	<window id="25">
 	<defaultcontrol always="true">51</defaultcontrol>
 	<onload condition="Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
+	<onload condition="substring(Container.FolderPath,plugin://plugin.video.movie25/?url=https%3a%2f%2fraw.github.com%2fhackermil)">Container.SetViewMode(500)</onload>
 	<onload condition="System.HasAddon(script.videolanguage)">RunScript(script.videolanguage,backend=True)</onload> 
 	<onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,backend=true)</onload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">RunScript(script.tv.show.next.aired,backend=True)</onload>
@@ -10,7 +11,7 @@
 	<onunload condition="Skin.HasSetting(trailers)">Skin.Reset(trailers)</onunload>
 	<onunload condition="Skin.HasSetting(playlists)">Skin.Reset(playlists)</onunload>
 	<allowoverlay>no</allowoverlay>
-	<views>500,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68</views>
+	<views>51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,500</views>
 	<controls>
 	<control type="multiimage"><!-- Multi Fanart -->
 	<include>WindowBG</include>
