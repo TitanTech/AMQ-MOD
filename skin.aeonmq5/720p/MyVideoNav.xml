@@ -3,7 +3,7 @@
 	<window id="25">
 	<defaultcontrol always="true">51</defaultcontrol>
 	<onload condition="Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
-	<onload condition="substring(Container.FolderPath,plugin://plugin.video.movie25/?url=https%3a%2f%2fraw.github.com%2fhackermil)">Container.SetViewMode(500)</onload>
+	<onload condition="!System.HasAddon(script.categories) + substring(Container.FolderPath,Plugin://script.categories/">Container.SetViewMode(500)</onload>
 	<onload condition="System.HasAddon(script.videolanguage)">RunScript(script.videolanguage,backend=True)</onload> 
 	<onload condition="System.HasAddon(script.extendedinfo)">RunScript(script.extendedinfo,backend=true)</onload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">RunScript(script.tv.show.next.aired,backend=True)</onload>
