@@ -26,6 +26,11 @@
 	<label>31058</label>
 	<onclick>XBMC.PowerDown()</onclick>
 	</item>
+	<item><!-- OpenElec -->
+	<label>OpenElec</label>
+	<onclick>RunScript(&quot;service.openelec.settings&quot;)</onclick>
+	<visible>![Skin.HasSetting(kiosk) | Skin.HasSetting(kiosksmart) + !SubString(skin.string(codestep),step3)]</visible>
+	</item>
 	<item><!-- Customizar Menu -->
 	<label>31207</label>
 	<onclick>Dialog.Close(5099)</onclick>
